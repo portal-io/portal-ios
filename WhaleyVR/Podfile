@@ -1,0 +1,175 @@
+
+#use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://liu.hongbo:liuhongbo@git.moretv.cn/whaley-vr-ios-midware/WVRPodSpecs.git'
+#source 'https://liu.hongbo:liuhongbo@git.moretv.cn/whaley-vr-ios-lib/WVRPodSpecs.git'
+#source 'https://liu.hongbo:liuhongbo@git.moretv.cn/whaley-vr-ios-biz/WVRPodSpecs.git'
+
+platform :ios, "9.0"
+inhibit_all_warnings!
+
+# 如果有库因为忽略警告而编译失败，单独给他设置不忽略警告
+# pod 'ReactiveCocoa', '~> 2.1.8', :inhibit_warnings => true
+
+target 'WhaleyVR' do
+#    use_frameworks!
+
+    pod 'AFNetworking',                 '~> 3.0'
+    pod 'Masonry',                      '~> 1.0'
+    pod 'FMDB',                         '~> 2.0'
+    pod 'YYImage',                      '~> 1.0'
+    pod 'YYText',                       '~> 1.0'
+    pod 'MJRefresh',                    '~> 3.1'
+    pod 'Toast',                        '~> 4.0'
+    pod 'UMengAnalytics-NO-IDFA',       '~> 4.2.5'
+    pod 'UMengUShare/UI',             '~> 6.4.5'
+    pod 'UMengUShare/Social/Sina',    '~> 6.4.5'
+    pod 'UMengUShare/Social/WeChat',  '~> 6.4.5'
+    pod 'UMengUShare/Social/QQ',      '~> 6.4.5'
+    pod 'YYModel',                      '~> 1.0'
+    pod 'JPush',                        '~> 3.0'
+    pod 'SAMKeychain',                  '~> 1.5'
+    
+    pod 'LKDBHelper',                   '~> 2.4'
+    pod 'HMSegmentedControl'
+    pod 'CocoaHTTPServer'
+    pod 'Bugly'
+    pod 'RZDataBinding'
+    pod 'ReactiveObjC',                 '~> 3.0'
+    pod 'Reachability',                 '~> 3.2'
+    
+    # custom pod
+#    pod 'WVRMediator',                  '~> 0.2'
+#    pod 'WVRUIFrame',                   '~> 0.1'
+    pod 'WVRImage',                     '~> 1.1.4'
+#    pod 'WVRCache',                     '~> 0.0.4'
+    pod 'WVRNet',                       '~> 0.2'
+#    pod 'WVRNetModel',                  '~> 0.0.5'
+    pod 'WVRAppContext',                '~> 0.4.1'
+#    pod 'WVRBI',                        '~> 0.0.1'
+#    pod 'WVRPlayer',                    '~> 0.0.8'
+    pod 'WVRParser',                    '~> 0.0.3'
+#    pod 'WVRShare',                     '~> 0.0.5'
+#    pod 'WVRWidget',                    '~> 0.5.7'
+#    pod 'WVRUtil',                      '~> 0.0.1'
+#    pod 'WVRHybrid',                    '~> 0.0.2'
+#    pod 'WVRPlayerUI',                  '~> 0.1.6'
+    pod 'WVRAPIService',                '~> 0.1.0'
+    pod 'WVRInteractor',                '~> 0.0.1'
+#    pod 'WVRDanmu',                     '~> 0.1'
+#    pod 'WVRProgram',                   '~> 0.1'
+#    pod 'WVRSetting',                   '~> 0.0.6'
+#    pod 'WVRAccount',                   '~> 0.0.4'
+#    pod 'WVRPay',                       '~> 0.0.6'
+    
+    #    pod 'Socket.IO-Client-Swift', '~> 8.3.3' # Or latest version
+    #    pod 'JSPatchPlatform'
+    #    pod 'FLEX', '~> 2.0', :configurations => ['Debug']
+    
+    #    pod 'MBProgressHUD',            '~> 1.0'
+    #    pod 'pop',                      '~> 1.0'
+    #    pod 'SDWebImage',               '~> 3.0'
+    #    pod 'AsyncDisplayKit'
+    #    pod 'Realm',                    '~> 2.0'
+    #    pod 'SSZipArchive',             '~> 1.6'
+    #    pod 'TCBlobDownload'
+
+
+    # 'node_modules'目录一般位于根目录中
+    # 但是如果你的结构不同，那你就要根据实际路径修改下面的`:path`
+    pod 'React', :path => '../../node_modules/react-native', :subspecs => [
+        'Core',
+        'CxxBridge', # 如果RN版本 >= 0.45则加入此行
+        'DevSupport', # 如果RN版本 >= 0.43，则需要加入此行才能开启开发者菜单
+        'RCTAnimation',
+        'RCTActionSheet',
+        'RCTImage',
+        'RCTLinkingIOS',
+        'RCTSettings',
+        'RCTVibration',
+        'RCTText',
+        'RCTNetwork',
+        'RCTWebSocket', # 这个模块是用于调试功能的
+        
+        # 在这里继续添加你所需要的RN模块
+    ]
+    # 如果你的RN版本 >= 0.42.0，则加入下面这行
+    pod "yoga", :path => "../../node_modules/react-native/ReactCommon/yoga"
+
+    # 如果RN版本 >= 0.45则加入下面三个第三方编译依赖
+    pod 'DoubleConversion', :podspec => '../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+    pod 'GLog', :podspec => '../../node_modules/react-native/third-party-podspecs/GLog.podspec'
+    pod 'Folly', :podspec => '../../node_modules/react-native/third-party-podspecs/Folly.podspec'
+    pod 'react-native-blur', :podspec => '../../node_modules/react-native-blur/react-native-blur.podspec'
+#    pod 'RNBlurModalView'
+end
+
+
+target 'WhaleyVRTests' do
+    #    pod 'AFNetworking',             '~> 3.0'
+    #    pod 'CocoaHTTPServer'
+    pod 'Kiwi'
+end
+
+
+# 最新的Pod版本
+
+#Using AFNetworking (3.1.0)
+#Using Bugly (2.4.8)
+#Using CocoaAsyncSocket (7.6.1)
+#Using CocoaHTTPServer (2.3)
+#Installing CocoaLumberjack 3.3.0 (was 3.2.1)
+#Using FMDB (2.7.2)
+#Using HMSegmentedControl (1.5.4)
+#Using JCore (1.1.5)
+#Using JPush (3.0.6)
+#Using Kiwi (2.4.0)
+#Using LKDBHelper (2.4.4)
+#Installing MJRefresh 3.1.14 (was 3.1.12)
+#Using Masonry (1.1.0)
+#Using RZDataBinding (2.1.0)
+#Using Reachability (3.2)
+#Using ReactiveObjC (3.0.0)
+#Installing SAMKeychain 1.5.3 (was 1.5.2)
+#Using Toast (3.1.0)
+#Using UMengAnalytics-NO-IDFA (4.2.5)
+#Using UMengUShare (6.4.5)
+#Installing WVRAPIService 0.0.8 (was 0.0.7)
+#Installing WVRAppContext 0.2.2 (was 0.2.1)
+#Using WVRBI (0.0.2)
+#Using WVRCache (0.0.3)
+#Using WVRHybrid (0.0.3)
+#Using WVRImage (1.1.1)
+#Using WVRInteractor (0.0.1)
+#Using WVRNet (0.2.3)
+#Using WVRNetModel (0.0.3)
+#Using WVRParser (0.0.4)
+#Using WVRPlayer (0.0.5)
+#Using WVRShare (0.0.5)
+#Installing WVRUIFrame 0.1.3 (was 0.1.2)
+#Using WVRUtil (0.0.1)
+#Installing WVRWidget 0.4.9 (was 0.4.3)
+#Using YYImage (1.0.4)
+#Using YYModel (1.0.4)
+#Using YYText (1.0.7)
+
+#platform :ios, “7.0”
+
+# 取决于你的工程如何组织，你的node_modules文件夹可能会在别的地方。
+# 请将:path后面的内容修改为正确的路径（一定要确保正确～～）。
+#pod 'React', :path => ‘./ReactComponent/node_modules/react-native', :subspecs => [
+#'Core',
+#'ART',
+#'RCTActionSheet',
+#'RCTAdSupport',
+#'RCTGeolocation',
+#'RCTImage',
+#'RCTNetwork',
+#'RCTPushNotification',
+#'RCTSettings',
+#'RCTText',
+#'RCTVibration',
+#'RCTWebSocket',
+#'RCTLinkingIOS',
+#]
+#需要的模块依赖进来便可，这里是为了举例子，列举所有的模块
