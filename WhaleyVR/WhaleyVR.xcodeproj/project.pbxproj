@@ -10388,8 +10388,6 @@
 				6938C07A1D4061F200424DDC /* Sources */,
 				6938C07B1D4061F200424DDC /* Frameworks */,
 				6938C07C1D4061F200424DDC /* Resources */,
-				8CA18E61F063B179F0EF137B /* [CP] Embed Pods Frameworks */,
-				B8438B5B13A0B745645A2239 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -10709,29 +10707,16 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKPromptResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TencentOpenApi_IOS_Bundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleyVR/Pods-WhaleyVR-resources.sh\"\n";
-		};
-		8CA18E61F063B179F0EF137B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WhaleyVRTests/Pods-WhaleyVRTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kiwi/Kiwi.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kiwi.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleyVRTests/Pods-WhaleyVRTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		9AD6C9349C837F7B20427121 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -10758,9 +10743,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WhaleyVR/Pods-WhaleyVR-frameworks.sh",
-				"${PODS_ROOT}/WVRImage/WVRImage/Classes/SDWebImage.framework",
-				"${PODS_ROOT}/WVRParser/WVRParser/Classes/WVRParseUrl/LuaParser.framework",
-				"${PODS_ROOT}/WVRParser/WVRParser/Classes/WVRParseUrl/SecurityFramework.framework",
+				"${PODS_ROOT}/PortalIosLibrary/WVRImage/WVRImage/Classes/SDWebImage.framework",
+				"${PODS_ROOT}/PortalIosLibrary/WVRParser/WVRParser/Classes/WVRParseUrl/LuaParser.framework",
+				"${PODS_ROOT}/PortalIosLibrary/WVRParser/WVRParser/Classes/WVRParseUrl/SecurityFramework.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -10771,21 +10756,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleyVR/Pods-WhaleyVR-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B8438B5B13A0B745645A2239 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleyVRTests/Pods-WhaleyVRTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D9F44C41407D0100ECC05F7D /* Embed Pods Frameworks */ = {
