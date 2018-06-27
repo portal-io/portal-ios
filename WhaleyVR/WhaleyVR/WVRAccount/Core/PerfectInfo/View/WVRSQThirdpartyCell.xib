@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VRA-Hr-iHO" customClass="WVRSQThirdpartyCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VRA-Hr-iHO" id="CxK-uA-5gK">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xv2-py-cda">
+                        <rect key="frame" x="53" y="52" width="44" height="44"/>
+                        <state key="normal" image="thirdParty_qq"/>
+                        <state key="selected" backgroundImage="QQ_selected"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef0-LN-fVY">
+                        <rect key="frame" x="165" y="52" width="44" height="45"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="thirdParty_wechat"/>
+                        <state key="selected" image="wechat_secleted"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9L-y4-lh1">
+                        <rect key="frame" x="262.5" y="52" width="45" height="45"/>
+                        <state key="normal" image="thirdParty_sina"/>
+                        <state key="selected" image="sina_selected"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用社交平台登录注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foo-5A-3jf">
+                        <rect key="frame" x="116" y="8" width="143" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xv2-py-cda" firstAttribute="centerX" secondItem="CxK-uA-5gK" secondAttribute="centerX" multiplier="0.4" id="0Vu-tJ-7DG"/>
+                    <constraint firstItem="Ef0-LN-fVY" firstAttribute="top" secondItem="CxK-uA-5gK" secondAttribute="topMargin" priority="750" constant="44" id="32N-RN-myp"/>
+                    <constraint firstItem="foo-5A-3jf" firstAttribute="centerX" secondItem="CxK-uA-5gK" secondAttribute="centerX" id="IqV-WZ-r6C"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ef0-LN-fVY" secondAttribute="bottom" priority="750" constant="44" id="W7o-Oo-A3f"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ef0-LN-fVY" secondAttribute="trailing" constant="158" id="YrP-kS-L3N"/>
+                    <constraint firstItem="Ef0-LN-fVY" firstAttribute="leading" secondItem="CxK-uA-5gK" secondAttribute="leadingMargin" constant="157" id="bQR-6T-mwj"/>
+                    <constraint firstItem="Xv2-py-cda" firstAttribute="centerY" secondItem="CxK-uA-5gK" secondAttribute="centerY" id="eNa-hS-SBc"/>
+                    <constraint firstAttribute="topMargin" secondItem="foo-5A-3jf" secondAttribute="top" id="rOo-4s-Fk1"/>
+                    <constraint firstItem="q9L-y4-lh1" firstAttribute="centerY" secondItem="CxK-uA-5gK" secondAttribute="centerY" id="tNQ-Ny-xnF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="q9L-y4-lh1" firstAttribute="leading" secondItem="VRA-Hr-iHO" secondAttribute="centerX" multiplier="1.4" id="aXm-Dq-Xa4"/>
+            </constraints>
+            <point key="canvasLocation" x="17" y="49"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="QQ_selected" width="45" height="44"/>
+        <image name="sina_selected" width="45" height="44"/>
+        <image name="thirdParty_qq" width="44" height="44"/>
+        <image name="thirdParty_sina" width="45" height="45"/>
+        <image name="thirdParty_wechat" width="44" height="45"/>
+        <image name="wechat_secleted" width="45" height="44"/>
+    </resources>
+</document>
