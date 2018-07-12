@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="nsm-9k-QcX" customClass="WVRSQADCell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mPF-OK-YpN">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mPF-OK-YpN" secondAttribute="trailing" id="B4E-HM-1JE"/>
+                <constraint firstItem="mPF-OK-YpN" firstAttribute="top" secondItem="nsm-9k-QcX" secondAttribute="top" id="haA-Eb-YdP"/>
+                <constraint firstAttribute="bottom" secondItem="mPF-OK-YpN" secondAttribute="bottom" id="kVE-g5-cae"/>
+                <constraint firstItem="mPF-OK-YpN" firstAttribute="leading" secondItem="nsm-9k-QcX" secondAttribute="leading" id="ov6-G0-fwU"/>
+            </constraints>
+            <connections>
+                <outlet property="thubImageV" destination="mPF-OK-YpN" id="a0P-kY-tHG"/>
+            </connections>
+            <point key="canvasLocation" x="77" y="33"/>
+        </collectionViewCell>
+    </objects>
+</document>

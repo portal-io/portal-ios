@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WVRPlayDramaCenterCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLq-wz-s4C">
+                    <rect key="frame" x="47.5" y="270" width="105" height="105"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="105" id="QPm-ic-X23"/>
+                        <constraint firstAttribute="width" constant="105" id="uBq-5p-Xzf"/>
+                    </constraints>
+                    <connections>
+                        <action selector="chooseDramsOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="NKm-Ix-tJU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W96-7L-aM1">
+                    <rect key="frame" x="222.5" y="270.5" width="105" height="105"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="chooseDramsOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="KKB-LA-Kin"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDJ-2w-FVL">
+                    <rect key="frame" x="135" y="35" width="105" height="105"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="chooseDramsOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="k0z-6p-V23"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="W96-7L-aM1" firstAttribute="centerY" secondItem="hLq-wz-s4C" secondAttribute="centerY" id="1od-6k-hHT"/>
+                <constraint firstItem="aDJ-2w-FVL" firstAttribute="height" secondItem="hLq-wz-s4C" secondAttribute="height" id="Ca9-gt-G1l"/>
+                <constraint firstItem="W96-7L-aM1" firstAttribute="width" secondItem="hLq-wz-s4C" secondAttribute="width" id="N8a-Iq-Ga2"/>
+                <constraint firstItem="aDJ-2w-FVL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="35" id="TBM-H7-lac"/>
+                <constraint firstItem="W96-7L-aM1" firstAttribute="height" secondItem="hLq-wz-s4C" secondAttribute="height" id="XGw-Qt-Ngv"/>
+                <constraint firstItem="aDJ-2w-FVL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="l2p-EK-uok"/>
+                <constraint firstItem="aDJ-2w-FVL" firstAttribute="width" secondItem="hLq-wz-s4C" secondAttribute="width" id="qkW-h1-HwD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hLq-wz-s4C" secondAttribute="bottom" id="sh2-lr-pPX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="W96-7L-aM1" secondAttribute="trailing" constant="47.5" id="wye-jA-Ubq"/>
+                <constraint firstItem="hLq-wz-s4C" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="47.5" id="ykg-I9-vWp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leftBtn" destination="hLq-wz-s4C" id="yea-5H-EBj"/>
+                <outlet property="leftBtnLeadingCons" destination="ykg-I9-vWp" id="slg-E3-KMP"/>
+                <outlet property="leftHeightCons" destination="QPm-ic-X23" id="e9I-0G-wjN"/>
+                <outlet property="leftWidthCons" destination="uBq-5p-Xzf" id="mKM-sJ-1Gd"/>
+                <outlet property="middleBtn" destination="aDJ-2w-FVL" id="x8X-b1-2nu"/>
+                <outlet property="middleTopCons" destination="TBM-H7-lac" id="DAo-dx-TcM"/>
+                <outlet property="rightBtn" destination="W96-7L-aM1" id="gkN-bG-NkF"/>
+                <outlet property="rightBtnTraillingCons" destination="wye-jA-Ubq" id="myZ-PC-Wow"/>
+            </connections>
+            <point key="canvasLocation" x="-123" y="-33"/>
+        </view>
+    </objects>
+</document>

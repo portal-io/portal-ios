@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WVRPayCallbackLoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KzK-dO-0f8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jp3-Ly-RLo">
+                    <rect key="frame" x="57.5" y="246.5" width="260" height="173"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qcO-vx-oYW">
+                            <rect key="frame" x="111.5" y="52" width="37" height="37"/>
+                            <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEY-yw-pVb">
+                            <rect key="frame" x="10" y="110" width="240" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Jp3-Ly-RLo" secondAttribute="height" multiplier="3:2" id="M76-P8-tN1"/>
+                        <constraint firstAttribute="width" constant="260" id="UAD-RS-jv1"/>
+                        <constraint firstItem="qcO-vx-oYW" firstAttribute="centerY" secondItem="Jp3-Ly-RLo" secondAttribute="centerY" constant="-16.5" id="WOL-LG-UUb"/>
+                        <constraint firstItem="XEY-yw-pVb" firstAttribute="leading" secondItem="Jp3-Ly-RLo" secondAttribute="leading" constant="10" id="a6Z-ct-fVl"/>
+                        <constraint firstItem="qcO-vx-oYW" firstAttribute="centerX" secondItem="Jp3-Ly-RLo" secondAttribute="centerX" id="pf9-0T-Rt6"/>
+                        <constraint firstAttribute="trailing" secondItem="XEY-yw-pVb" secondAttribute="trailing" constant="10" id="vvm-RB-Xti"/>
+                        <constraint firstItem="XEY-yw-pVb" firstAttribute="top" secondItem="qcO-vx-oYW" secondAttribute="bottom" constant="21" id="yU7-er-rdn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KzK-dO-0f8" secondAttribute="bottom" id="8kD-Gd-WHk"/>
+                <constraint firstItem="KzK-dO-0f8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8tV-Sk-9aJ"/>
+                <constraint firstItem="KzK-dO-0f8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HAr-ya-MDx"/>
+                <constraint firstItem="Jp3-Ly-RLo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="U1f-tD-NeB"/>
+                <constraint firstItem="Jp3-Ly-RLo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="X9k-fn-vqZ"/>
+                <constraint firstAttribute="trailing" secondItem="KzK-dO-0f8" secondAttribute="trailing" id="uMb-WU-46M"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="qcO-vx-oYW" id="758-av-mjv"/>
+                <outlet property="alertV" destination="Jp3-Ly-RLo" id="hVZ-ba-fJO"/>
+                <outlet property="statusMsgL" destination="XEY-yw-pVb" id="bMI-bO-IEh"/>
+            </connections>
+        </view>
+    </objects>
+</document>

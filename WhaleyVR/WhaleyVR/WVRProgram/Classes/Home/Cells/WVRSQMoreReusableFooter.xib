@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="odA-Fn-aVy" customClass="WVRSQMoreReusableFooter">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaO-wC-Mcg">
+                    <rect key="frame" x="0.0" y="45" width="375" height="6"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aL3-Sj-bxs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="nfP-mx-ik5"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-Uk-PLv">
+                    <rect key="frame" x="10" y="0.0" width="166.5" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="进入频道" image="icon_find_movie_more_normal">
+                        <color key="titleColor" red="0.16078431369999999" green="0.63137254899999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" title="进入频道" image="icon_find_movie_more_press">
+                        <color key="titleColor" red="0.16078431369999999" green="0.63137254899999995" blue="0.96862745100000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goToOnClick:" destination="odA-Fn-aVy" eventType="touchUpInside" id="iUV-3T-aFZ"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaulf_holder_image" translatesAutoresizingMaskIntoConstraints="NO" id="Oke-CX-T3U">
+                    <rect key="frame" x="186.5" y="15.5" width="1" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Ses-09-CRK"/>
+                        <constraint firstAttribute="width" constant="0.5" id="s8n-gf-S3v"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zl-qJ-2d2">
+                    <rect key="frame" x="197.5" y="0.0" width="167.5" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="换一批" image="icon_find_refrsh_normal">
+                        <color key="titleColor" red="0.16078431369999999" green="0.63137254899999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" title="换一批" image="icon_find_refrsh_press">
+                        <color key="titleColor" red="0.16078431369999999" green="0.63137254899999995" blue="0.96862745100000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="refreshOnClick:" destination="odA-Fn-aVy" eventType="touchUpInside" id="9TD-m2-R5h"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="e3H-Uk-PLv" firstAttribute="leading" secondItem="odA-Fn-aVy" secondAttribute="leading" constant="10" id="6mL-AK-bFd"/>
+                <constraint firstItem="aL3-Sj-bxs" firstAttribute="top" secondItem="odA-Fn-aVy" secondAttribute="top" id="7Yz-3I-T1P"/>
+                <constraint firstItem="Oke-CX-T3U" firstAttribute="centerX" secondItem="odA-Fn-aVy" secondAttribute="centerX" id="Ad9-6l-fIe"/>
+                <constraint firstAttribute="bottom" secondItem="kaO-wC-Mcg" secondAttribute="bottom" id="Cia-oh-gbo"/>
+                <constraint firstItem="kaO-wC-Mcg" firstAttribute="leading" secondItem="odA-Fn-aVy" secondAttribute="leading" id="CmJ-ld-aHD"/>
+                <constraint firstItem="aL3-Sj-bxs" firstAttribute="leading" secondItem="odA-Fn-aVy" secondAttribute="leading" id="FHa-bY-p3g"/>
+                <constraint firstItem="kaO-wC-Mcg" firstAttribute="top" secondItem="odA-Fn-aVy" secondAttribute="top" constant="45" id="K5H-Xi-9nw"/>
+                <constraint firstAttribute="trailing" secondItem="4Zl-qJ-2d2" secondAttribute="trailing" constant="10" id="OAf-GR-RY5"/>
+                <constraint firstItem="4Zl-qJ-2d2" firstAttribute="leading" secondItem="Oke-CX-T3U" secondAttribute="trailing" constant="10" id="POf-d5-TfZ"/>
+                <constraint firstAttribute="trailing" secondItem="kaO-wC-Mcg" secondAttribute="trailing" id="TCS-hV-AfR"/>
+                <constraint firstAttribute="bottom" secondItem="e3H-Uk-PLv" secondAttribute="bottom" constant="6" id="XUq-FL-hd7"/>
+                <constraint firstAttribute="trailing" secondItem="aL3-Sj-bxs" secondAttribute="trailing" id="XWD-oA-CKe"/>
+                <constraint firstItem="Oke-CX-T3U" firstAttribute="leading" secondItem="e3H-Uk-PLv" secondAttribute="trailing" constant="10" id="YIn-2s-ACy"/>
+                <constraint firstItem="e3H-Uk-PLv" firstAttribute="top" secondItem="odA-Fn-aVy" secondAttribute="top" id="bve-ui-0XW"/>
+                <constraint firstAttribute="bottom" secondItem="4Zl-qJ-2d2" secondAttribute="bottom" constant="6" id="fIV-ua-lFR"/>
+                <constraint firstItem="Oke-CX-T3U" firstAttribute="centerY" secondItem="odA-Fn-aVy" secondAttribute="centerY" constant="-5" id="mQ5-XQ-fN4"/>
+                <constraint firstItem="4Zl-qJ-2d2" firstAttribute="top" secondItem="odA-Fn-aVy" secondAttribute="top" id="tdR-VJ-BdB"/>
+            </constraints>
+            <connections>
+                <outlet property="gotoBtn" destination="e3H-Uk-PLv" id="pac-pP-gAK"/>
+                <outlet property="refreshBtn" destination="4Zl-qJ-2d2" id="fp6-bX-3od"/>
+            </connections>
+            <point key="canvasLocation" x="2.5" y="95"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="defaulf_holder_image" width="25" height="25"/>
+        <image name="icon_find_movie_more_normal" width="6" height="9"/>
+        <image name="icon_find_movie_more_press" width="6" height="9"/>
+        <image name="icon_find_refrsh_normal" width="10" height="11"/>
+        <image name="icon_find_refrsh_press" width="10" height="11"/>
+    </resources>
+</document>

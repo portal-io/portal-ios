@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WVRBaseNullView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_live_direct_null" translatesAutoresizingMaskIntoConstraints="NO" id="XGa-gV-qzi">
+                    <rect key="frame" x="0.0" y="273" width="375" height="121"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="XGa-gV-qzi" secondAttribute="height" multiplier="375:121" id="5LD-eY-wB4"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有获取到数据，请点击刷新试试～" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndh-5U-JkX">
+                    <rect key="frame" x="0.0" y="414" width="375" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XGa-gV-qzi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MWm-sT-DXF"/>
+                <constraint firstItem="ndh-5U-JkX" firstAttribute="top" secondItem="XGa-gV-qzi" secondAttribute="bottom" constant="20" id="P4R-yI-ekp"/>
+                <constraint firstAttribute="trailing" secondItem="XGa-gV-qzi" secondAttribute="trailing" id="TIE-0f-BQF"/>
+                <constraint firstAttribute="trailing" secondItem="ndh-5U-JkX" secondAttribute="trailing" id="gsm-9R-o2d"/>
+                <constraint firstItem="ndh-5U-JkX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iSp-Yn-pfb"/>
+                <constraint firstItem="XGa-gV-qzi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lK8-6j-99f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconIV" destination="XGa-gV-qzi" id="TrC-CR-A8k"/>
+                <outlet property="textL" destination="ndh-5U-JkX" id="lX1-hg-Egt"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_live_direct_null" width="130" height="121"/>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WVRLiveTabTipView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Jf-pk-dUN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUF-jB-05b">
+                    <rect key="frame" x="326" y="28" width="49" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="XiY-hJ-f3V"/>
+                    </constraints>
+                    <state key="normal" image="icon_live_tab_tip_mineReserve"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_live_tab_tip_des" translatesAutoresizingMaskIntoConstraints="NO" id="qoj-RM-igz">
+                    <rect key="frame" x="151" y="87" width="210" height="140"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8Jf-pk-dUN" secondAttribute="trailing" id="0gL-gw-34z"/>
+                <constraint firstAttribute="trailing" secondItem="qoj-RM-igz" secondAttribute="trailing" constant="14" id="ADp-ix-r7g"/>
+                <constraint firstItem="8Jf-pk-dUN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Iua-2H-mE2"/>
+                <constraint firstAttribute="bottom" secondItem="8Jf-pk-dUN" secondAttribute="bottom" id="dEZ-T1-X4M"/>
+                <constraint firstAttribute="trailing" secondItem="UUF-jB-05b" secondAttribute="trailing" id="kE8-GN-39n"/>
+                <constraint firstItem="qoj-RM-igz" firstAttribute="top" secondItem="UUF-jB-05b" secondAttribute="bottom" constant="10" id="lhy-tc-Mnn"/>
+                <constraint firstItem="UUF-jB-05b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="28" id="pEQ-cS-p3c"/>
+                <constraint firstItem="8Jf-pk-dUN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uat-3U-Bwt"/>
+            </constraints>
+            <connections>
+                <outlet property="tipBtn" destination="UUF-jB-05b" id="6ua-bP-bJv"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_live_tab_tip_des" width="210" height="140"/>
+        <image name="icon_live_tab_tip_mineReserve" width="49" height="49"/>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="flN-tM-HeU" customClass="WVRLiveReserveCell">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="266"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="266"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaF-ky-sND">
+                        <rect key="frame" x="0.0" y="260" width="319" height="6"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="6" id="uWj-aQ-uer"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t0v-Wr-qia">
+                        <rect key="frame" x="7" y="7" width="305" height="193"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2e-uo-IwX">
+                        <rect key="frame" x="10" y="209" width="214" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4C-Fb-qa9">
+                        <rect key="frame" x="10" y="236" width="214" height="9"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.70588235294117641" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7p-Rz-6U8">
+                        <rect key="frame" x="224" y="207" width="85" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="P92-0u-Pbq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="预约">
+                            <color key="titleColor" red="0.20000000000000001" green="0.63921568630000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" title="已预约">
+                            <color key="titleColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="reserveBtnOnClick:" destination="flN-tM-HeU" eventType="touchUpInside" id="iWG-oU-VgJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DaF-ky-sND" firstAttribute="leading" secondItem="flN-tM-HeU" secondAttribute="leading" id="AJ5-FE-rW9"/>
+                <constraint firstItem="t0v-Wr-qia" firstAttribute="top" secondItem="flN-tM-HeU" secondAttribute="top" constant="7" id="HoS-Kf-NkJ"/>
+                <constraint firstItem="P7p-Rz-6U8" firstAttribute="leading" secondItem="z4C-Fb-qa9" secondAttribute="trailing" id="JgJ-S3-9uR"/>
+                <constraint firstAttribute="trailing" secondItem="P7p-Rz-6U8" secondAttribute="trailing" constant="10" id="MTL-9Y-6Pu"/>
+                <constraint firstItem="q2e-uo-IwX" firstAttribute="top" secondItem="t0v-Wr-qia" secondAttribute="bottom" constant="9" id="PJL-PR-kdn"/>
+                <constraint firstItem="t0v-Wr-qia" firstAttribute="leading" secondItem="flN-tM-HeU" secondAttribute="leading" constant="7" id="SrT-kD-fOm"/>
+                <constraint firstAttribute="bottom" secondItem="P7p-Rz-6U8" secondAttribute="bottom" constant="15" id="VSb-9N-qpw"/>
+                <constraint firstAttribute="bottom" secondItem="DaF-ky-sND" secondAttribute="bottom" id="ZWA-vA-6ef"/>
+                <constraint firstItem="z4C-Fb-qa9" firstAttribute="leading" secondItem="flN-tM-HeU" secondAttribute="leading" constant="10" id="f4G-2f-B0i"/>
+                <constraint firstAttribute="trailing" secondItem="t0v-Wr-qia" secondAttribute="trailing" constant="7" id="hvC-ue-nWJ"/>
+                <constraint firstItem="P7p-Rz-6U8" firstAttribute="top" secondItem="t0v-Wr-qia" secondAttribute="bottom" constant="7" id="hvX-z1-OER"/>
+                <constraint firstItem="DaF-ky-sND" firstAttribute="top" secondItem="z4C-Fb-qa9" secondAttribute="bottom" constant="15" id="jbf-Xv-wI0"/>
+                <constraint firstAttribute="trailing" secondItem="DaF-ky-sND" secondAttribute="trailing" id="lHz-pX-e5u"/>
+                <constraint firstAttribute="bottom" secondItem="t0v-Wr-qia" secondAttribute="bottom" constant="66" id="nhn-QR-5l4"/>
+                <constraint firstItem="z4C-Fb-qa9" firstAttribute="top" secondItem="q2e-uo-IwX" secondAttribute="bottom" constant="9" id="v3T-Qi-q4n"/>
+                <constraint firstItem="P7p-Rz-6U8" firstAttribute="leading" secondItem="q2e-uo-IwX" secondAttribute="trailing" id="wED-iF-SMS"/>
+                <constraint firstItem="q2e-uo-IwX" firstAttribute="leading" secondItem="flN-tM-HeU" secondAttribute="leading" constant="10" id="xCU-f2-fsm"/>
+            </constraints>
+            <size key="customSize" width="319" height="244"/>
+            <connections>
+                <outlet property="iconV" destination="t0v-Wr-qia" id="KIv-ve-FHP"/>
+                <outlet property="intrL" destination="z4C-Fb-qa9" id="7Oq-MR-S6V"/>
+                <outlet property="reserveBtn" destination="P7p-Rz-6U8" id="RwY-oo-dwW"/>
+                <outlet property="titleL" destination="q2e-uo-IwX" id="XjY-eV-WHm"/>
+            </connections>
+            <point key="canvasLocation" x="-618" y="14"/>
+        </collectionViewCell>
+    </objects>
+</document>

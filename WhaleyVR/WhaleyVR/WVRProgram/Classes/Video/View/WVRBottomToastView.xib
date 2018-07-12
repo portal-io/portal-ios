@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WVRBottomToastView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCa-43-xTr">
+                    <rect key="frame" x="8" y="13" width="303" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejm-AP-JvL">
+                    <rect key="frame" x="319" y="2" width="50" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="U8U-Ph-di2"/>
+                        <constraint firstAttribute="height" constant="40" id="d23-VR-b9c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="X">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dismisOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="zqT-g0-0t1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Ejm-AP-JvL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3vd-5p-o2b"/>
+                <constraint firstAttribute="trailing" secondItem="Ejm-AP-JvL" secondAttribute="trailing" constant="6" id="MNw-zc-ubx"/>
+                <constraint firstItem="aCa-43-xTr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="NBI-L4-bRL"/>
+                <constraint firstItem="aCa-43-xTr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YXS-E5-RpA"/>
+                <constraint firstItem="Ejm-AP-JvL" firstAttribute="leading" secondItem="aCa-43-xTr" secondAttribute="trailing" constant="8" id="ZAr-fM-zq8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleL" destination="aCa-43-xTr" id="drS-a7-cJ1"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SHx-Al-leu" customClass="WVRTVDetailWorkCell">
+            <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kz-OT-jco">
+                        <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="12">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="dayBtnOnClick:" destination="SHx-Al-leu" eventType="touchUpInside" id="MaV-1q-f5L"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1AG-W4-bch">
+                        <rect key="frame" x="0.0" y="53" width="54" height="1"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="B1L-3s-R9K"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1AG-W4-bch" secondAttribute="bottom" id="GjN-bH-Xja"/>
+                <constraint firstAttribute="trailing" secondItem="9Kz-OT-jco" secondAttribute="trailing" id="dF2-Fc-twS"/>
+                <constraint firstItem="9Kz-OT-jco" firstAttribute="top" secondItem="SHx-Al-leu" secondAttribute="top" id="gbg-gg-4pj"/>
+                <constraint firstAttribute="trailing" secondItem="1AG-W4-bch" secondAttribute="trailing" id="jeS-rP-8VC"/>
+                <constraint firstItem="9Kz-OT-jco" firstAttribute="leading" secondItem="SHx-Al-leu" secondAttribute="leading" id="lc1-8R-XTa"/>
+                <constraint firstItem="1AG-W4-bch" firstAttribute="leading" secondItem="SHx-Al-leu" secondAttribute="leading" id="uPh-G2-OOn"/>
+                <constraint firstAttribute="bottom" secondItem="9Kz-OT-jco" secondAttribute="bottom" id="uw8-Du-jW5"/>
+            </constraints>
+            <connections>
+                <outlet property="dayBtn" destination="9Kz-OT-jco" id="XF1-9V-gtk"/>
+            </connections>
+            <point key="canvasLocation" x="-257" y="-28"/>
+        </collectionViewCell>
+    </objects>
+</document>

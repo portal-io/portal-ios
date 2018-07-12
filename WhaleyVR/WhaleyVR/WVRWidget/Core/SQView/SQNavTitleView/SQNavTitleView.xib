@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SQNavTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="27"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B8-xO-kpJ">
+                    <rect key="frame" x="0.0" y="0.0" width="66" height="27"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="66" id="Gf6-tm-mmw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="影院">
+                        <color key="titleColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="影院">
+                        <color key="titleColor" red="0.11764705882352941" green="0.61960784313725492" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="leftBtnOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Mxk-2F-9Hf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAM-zz-Zy0">
+                    <rect key="frame" x="72" y="0.0" width="66" height="27"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="66" id="g8c-C3-dtj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="全景">
+                        <color key="titleColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="全景">
+                        <color key="titleColor" red="0.11764705882352941" green="0.61960784313725492" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="rightBtnOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="3vz-nF-yRd"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Ds-CA-bTQ">
+                    <rect key="frame" x="69" y="8" width="1" height="11"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="EMt-dK-1db"/>
+                        <constraint firstAttribute="height" constant="11" id="aXf-CL-V40"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vAM-zz-Zy0" secondAttribute="trailing" id="8LM-gK-HVP"/>
+                <constraint firstItem="5Ds-CA-bTQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PqB-aI-uk8"/>
+                <constraint firstItem="vAM-zz-Zy0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qei-yH-dX5"/>
+                <constraint firstAttribute="bottom" secondItem="7B8-xO-kpJ" secondAttribute="bottom" id="WQD-jB-xUy"/>
+                <constraint firstAttribute="bottom" secondItem="vAM-zz-Zy0" secondAttribute="bottom" id="bgd-68-1Uq"/>
+                <constraint firstItem="7B8-xO-kpJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pXB-OC-aX2"/>
+                <constraint firstItem="5Ds-CA-bTQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tJ7-gQ-iSV"/>
+                <constraint firstItem="7B8-xO-kpJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="x1c-Zs-Rw8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftBtn" destination="7B8-xO-kpJ" id="nPa-Jz-Kbx"/>
+                <outlet property="rightBtn" destination="vAM-zz-Zy0" id="h63-iL-epM"/>
+            </connections>
+            <point key="canvasLocation" x="-274" y="84"/>
+        </view>
+    </objects>
+</document>

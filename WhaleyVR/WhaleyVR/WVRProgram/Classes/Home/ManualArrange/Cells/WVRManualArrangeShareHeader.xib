@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="r5z-pQ-SHp" customClass="WVRManualArrangeShareHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享专题至" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yB-rl-lIT">
+                    <rect key="frame" x="146.5" y="31.5" width="82" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5g-5g-rFn">
+                    <rect key="frame" x="148" y="69.5" width="78" height="1.5"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1.5" id="1zv-cs-ilx"/>
+                        <constraint firstAttribute="width" constant="78" id="jOP-4S-YkB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4C-4D-DaK">
+                    <rect key="frame" x="148.5" y="15" width="78" height="1.5"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" id="Fb2-zS-nf0"/>
+                        <constraint firstAttribute="height" constant="1.5" id="iwT-d8-yzH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="4yB-rl-lIT" firstAttribute="top" secondItem="N4C-4D-DaK" secondAttribute="bottom" constant="15" id="5Id-qp-FH4"/>
+                <constraint firstItem="N4C-4D-DaK" firstAttribute="centerX" secondItem="r5z-pQ-SHp" secondAttribute="centerX" id="MYN-lJ-iQ4"/>
+                <constraint firstAttribute="bottom" secondItem="N5g-5g-rFn" secondAttribute="bottom" constant="20" id="SxU-E5-JRK"/>
+                <constraint firstItem="N5g-5g-rFn" firstAttribute="top" secondItem="4yB-rl-lIT" secondAttribute="bottom" constant="15" id="Tjf-3V-Y8K"/>
+                <constraint firstItem="4yB-rl-lIT" firstAttribute="centerX" secondItem="r5z-pQ-SHp" secondAttribute="centerX" id="bda-bJ-7w8"/>
+                <constraint firstItem="N5g-5g-rFn" firstAttribute="centerX" secondItem="r5z-pQ-SHp" secondAttribute="centerX" id="eJ0-Kd-QKK"/>
+                <constraint firstItem="N4C-4D-DaK" firstAttribute="top" secondItem="r5z-pQ-SHp" secondAttribute="top" constant="15" id="pHY-Pr-MuQ"/>
+            </constraints>
+            <point key="canvasLocation" x="-161.5" y="131"/>
+        </collectionReusableView>
+    </objects>
+</document>

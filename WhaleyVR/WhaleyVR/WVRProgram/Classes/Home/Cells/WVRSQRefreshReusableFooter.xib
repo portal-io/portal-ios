@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="odA-Fn-aVy" customClass="WVRSQRefreshReusableFooter">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zl-qJ-2d2">
+                    <rect key="frame" x="0.0" y="10" width="365" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="换一批" image="icon_find_refrsh_normal">
+                        <color key="titleColor" red="0.16078431369999999" green="0.63137254899999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" title="换一批" image="icon_find_refrsh_press">
+                        <color key="titleColor" red="0.16078431369999999" green="0.63137254899999995" blue="0.96862745100000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="refreshOnClick:" destination="odA-Fn-aVy" eventType="touchUpInside" id="9TD-m2-R5h"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WvE-BK-tqa">
+                    <rect key="frame" x="0.0" y="40" width="375" height="10"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYZ-eM-oAD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="oj8-DV-eM5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tYZ-eM-oAD" firstAttribute="leading" secondItem="odA-Fn-aVy" secondAttribute="leading" id="4Aw-fB-NFg"/>
+                <constraint firstAttribute="trailing" secondItem="WvE-BK-tqa" secondAttribute="trailing" id="4ZI-y4-Nd8"/>
+                <constraint firstItem="WvE-BK-tqa" firstAttribute="leading" secondItem="odA-Fn-aVy" secondAttribute="leading" id="62N-Cd-jFN"/>
+                <constraint firstAttribute="trailing" secondItem="4Zl-qJ-2d2" secondAttribute="trailing" constant="10" id="OAf-GR-RY5"/>
+                <constraint firstItem="WvE-BK-tqa" firstAttribute="top" secondItem="odA-Fn-aVy" secondAttribute="top" constant="40" id="SVV-tz-WVS"/>
+                <constraint firstItem="4Zl-qJ-2d2" firstAttribute="leading" secondItem="odA-Fn-aVy" secondAttribute="leading" id="bgE-0g-Ct8"/>
+                <constraint firstAttribute="bottom" secondItem="WvE-BK-tqa" secondAttribute="bottom" id="bgv-t5-Dck"/>
+                <constraint firstAttribute="bottom" secondItem="4Zl-qJ-2d2" secondAttribute="bottom" constant="10" id="fIV-ua-lFR"/>
+                <constraint firstItem="4Zl-qJ-2d2" firstAttribute="top" secondItem="odA-Fn-aVy" secondAttribute="top" constant="10" id="tdR-VJ-BdB"/>
+                <constraint firstAttribute="trailing" secondItem="tYZ-eM-oAD" secondAttribute="trailing" id="v3m-1p-QND"/>
+                <constraint firstItem="tYZ-eM-oAD" firstAttribute="top" secondItem="odA-Fn-aVy" secondAttribute="top" id="yrd-8r-tjK"/>
+            </constraints>
+            <connections>
+                <outlet property="refreshBtn" destination="4Zl-qJ-2d2" id="fp6-bX-3od"/>
+            </connections>
+            <point key="canvasLocation" x="2.5" y="95"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="icon_find_refrsh_normal" width="10" height="11"/>
+        <image name="icon_find_refrsh_press" width="10" height="11"/>
+    </resources>
+</document>

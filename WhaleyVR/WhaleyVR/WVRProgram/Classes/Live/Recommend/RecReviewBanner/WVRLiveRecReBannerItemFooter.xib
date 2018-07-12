@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="yPo-k7-Oya" customClass="WVRLiveRecReBannerItemFooter">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qze-g0-yNo">
+                    <rect key="frame" x="4" y="0.0" width="122" height="128"/>
+                    <state key="normal" title="查看全部">
+                        <color key="titleColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="moreBtnOnClick:" destination="yPo-k7-Oya" eventType="touchUpInside" id="v2P-SG-f2x"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Qze-g0-yNo" firstAttribute="leading" secondItem="yPo-k7-Oya" secondAttribute="leading" constant="4" id="3cy-4N-ID2"/>
+                <constraint firstAttribute="trailing" secondItem="Qze-g0-yNo" secondAttribute="trailing" constant="2" id="I9a-Og-YfK"/>
+                <constraint firstAttribute="bottom" secondItem="Qze-g0-yNo" secondAttribute="bottom" constant="52" id="NoM-Xq-K27"/>
+                <constraint firstItem="Qze-g0-yNo" firstAttribute="top" secondItem="yPo-k7-Oya" secondAttribute="top" id="dEP-PW-Ni6"/>
+            </constraints>
+            <connections>
+                <outlet property="moreBtn" destination="Qze-g0-yNo" id="dxe-Zc-XxN"/>
+            </connections>
+            <point key="canvasLocation" x="-18" y="-13"/>
+        </collectionReusableView>
+    </objects>
+</document>

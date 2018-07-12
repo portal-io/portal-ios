@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rPb-Gu-OY4" customClass="WVRHistoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rPb-Gu-OY4" id="Jwa-4z-fUZ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BWS-4h-dsn">
+                        <rect key="frame" x="18" y="10" width="125" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="YKD-1y-zOS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8L-FP-rkq">
+                        <rect key="frame" x="151" y="22.5" width="198" height="18"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kib-1d-pSx">
+                        <rect key="frame" x="151" y="55.5" width="198" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_drama_tag" translatesAutoresizingMaskIntoConstraints="NO" id="2gf-iX-9Ic">
+                        <rect key="frame" x="104" y="10" width="39" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Gp9-Ij-TBe"/>
+                            <constraint firstAttribute="width" constant="39" id="JBe-Bk-btP"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2gf-iX-9Ic" firstAttribute="trailing" secondItem="BWS-4h-dsn" secondAttribute="trailing" id="Cov-1I-AI2"/>
+                    <constraint firstItem="kib-1d-pSx" firstAttribute="top" secondItem="d8L-FP-rkq" secondAttribute="bottom" constant="15" id="Ju2-fD-Pq9"/>
+                    <constraint firstItem="d8L-FP-rkq" firstAttribute="leading" secondItem="BWS-4h-dsn" secondAttribute="trailing" constant="8" id="WLO-2n-46f"/>
+                    <constraint firstItem="BWS-4h-dsn" firstAttribute="leading" secondItem="Jwa-4z-fUZ" secondAttribute="leadingMargin" constant="2" id="cCf-d3-kJc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="d8L-FP-rkq" secondAttribute="trailing" constant="10" id="iRJ-Z5-9eE"/>
+                    <constraint firstItem="d8L-FP-rkq" firstAttribute="centerY" secondItem="BWS-4h-dsn" secondAttribute="centerY" constant="-15" id="mNW-1Y-YM4"/>
+                    <constraint firstItem="kib-1d-pSx" firstAttribute="leading" secondItem="BWS-4h-dsn" secondAttribute="trailing" constant="8" id="u3m-SJ-1Gn"/>
+                    <constraint firstItem="2gf-iX-9Ic" firstAttribute="top" secondItem="BWS-4h-dsn" secondAttribute="top" id="xQF-Fz-jsY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kib-1d-pSx" secondAttribute="trailing" constant="10" id="yQ0-8f-m10"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="BWS-4h-dsn" firstAttribute="top" secondItem="rPb-Gu-OY4" secondAttribute="top" constant="10" id="iNt-Nw-JDh"/>
+                <constraint firstAttribute="bottom" secondItem="BWS-4h-dsn" secondAttribute="bottom" constant="10" id="qg5-fg-uUC"/>
+            </constraints>
+            <connections>
+                <outlet property="gDramaTag" destination="2gf-iX-9Ic" id="GxJ-gl-e3S"/>
+                <outlet property="iconBottomCons" destination="qg5-fg-uUC" id="4W6-Be-nya"/>
+                <outlet property="iconTopCons" destination="iNt-Nw-JDh" id="egf-xK-PJu"/>
+                <outlet property="iconV" destination="BWS-4h-dsn" id="2gH-Aw-PYH"/>
+                <outlet property="subTitleL" destination="kib-1d-pSx" id="Jsq-SC-nIn"/>
+                <outlet property="titleL" destination="d8L-FP-rkq" id="qXj-VG-SG1"/>
+            </connections>
+            <point key="canvasLocation" x="-185.5" y="32.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_drama_tag" width="39" height="18"/>
+    </resources>
+</document>

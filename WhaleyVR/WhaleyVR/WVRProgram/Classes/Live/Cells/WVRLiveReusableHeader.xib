@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1Gj-Z3-2tB" customClass="WVRLiveReusableHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f4U-6b-dGN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="245"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_bg_banner" translatesAutoresizingMaskIntoConstraints="NO" id="l6Z-el-ofr">
+                    <rect key="frame" x="0.0" y="203" width="375" height="139"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1Q-fz-h3V" customClass="WVRSwipeableView">
+                    <rect key="frame" x="15" y="57" width="345" height="188"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5x-NP-xbo">
+                    <rect key="frame" x="136.5" y="277" width="104" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="预告日历" backgroundImage="icon_reserve_live_bg"/>
+                    <connections>
+                        <action selector="reserveCalendarOnClick:" destination="1Gj-Z3-2tB" eventType="touchUpInside" id="ceq-LR-xYf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QC-7B-NdI">
+                    <rect key="frame" x="250.5" y="277" width="104.5" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="直播回顾" backgroundImage="icon_review_bg"/>
+                    <connections>
+                        <action selector="reviewOnClick:" destination="1Gj-Z3-2tB" eventType="touchUpInside" id="wfU-SN-A4e"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oef-NM-jJS">
+                    <rect key="frame" x="22" y="277" width="104.5" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="iCZ-k0-JWg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="正在直播" backgroundImage="icon_living_bg"/>
+                    <connections>
+                        <action selector="livingOnClick:" destination="1Gj-Z3-2tB" eventType="touchUpInside" id="LJL-oO-hDQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oef-NM-jJS" secondAttribute="bottom" constant="31" id="1Za-J9-x6n"/>
+                <constraint firstItem="oef-NM-jJS" firstAttribute="width" secondItem="S5x-NP-xbo" secondAttribute="width" id="44i-cG-1mP"/>
+                <constraint firstItem="oef-NM-jJS" firstAttribute="height" secondItem="S5x-NP-xbo" secondAttribute="height" id="6I2-mg-7po"/>
+                <constraint firstItem="oef-NM-jJS" firstAttribute="leading" secondItem="1Gj-Z3-2tB" secondAttribute="leading" constant="22" id="C6A-6I-pY7"/>
+                <constraint firstAttribute="trailing" secondItem="3QC-7B-NdI" secondAttribute="trailing" constant="20" id="Gr4-AK-j19"/>
+                <constraint firstItem="oef-NM-jJS" firstAttribute="height" secondItem="3QC-7B-NdI" secondAttribute="height" id="Khr-Je-Yop"/>
+                <constraint firstItem="t1Q-fz-h3V" firstAttribute="top" secondItem="1Gj-Z3-2tB" secondAttribute="top" constant="57" id="MgH-rD-2rW"/>
+                <constraint firstAttribute="trailing" secondItem="f4U-6b-dGN" secondAttribute="trailing" id="N3o-P6-Vnu"/>
+                <constraint firstAttribute="bottom" secondItem="3QC-7B-NdI" secondAttribute="bottom" constant="31" id="Nfl-Ex-ozP"/>
+                <constraint firstItem="l6Z-el-ofr" firstAttribute="leading" secondItem="1Gj-Z3-2tB" secondAttribute="leading" id="RQB-2b-nvg"/>
+                <constraint firstAttribute="bottom" secondItem="S5x-NP-xbo" secondAttribute="bottom" constant="31" id="SGh-yZ-JaO"/>
+                <constraint firstItem="oef-NM-jJS" firstAttribute="top" secondItem="t1Q-fz-h3V" secondAttribute="bottom" constant="32" id="TE5-nn-5kv"/>
+                <constraint firstItem="f4U-6b-dGN" firstAttribute="top" secondItem="1Gj-Z3-2tB" secondAttribute="top" id="Wg3-io-a9w"/>
+                <constraint firstItem="3QC-7B-NdI" firstAttribute="leading" secondItem="S5x-NP-xbo" secondAttribute="trailing" constant="10" id="Z4k-4c-uFS"/>
+                <constraint firstAttribute="bottom" secondItem="f4U-6b-dGN" secondAttribute="bottom" constant="105" id="Zzg-dd-D40"/>
+                <constraint firstItem="S5x-NP-xbo" firstAttribute="leading" secondItem="oef-NM-jJS" secondAttribute="trailing" constant="10" id="aR8-LA-YYc"/>
+                <constraint firstItem="l6Z-el-ofr" firstAttribute="top" secondItem="1Gj-Z3-2tB" secondAttribute="top" constant="203" id="d2d-Do-xvc"/>
+                <constraint firstAttribute="bottom" secondItem="t1Q-fz-h3V" secondAttribute="bottom" constant="105" id="eeV-Ly-HX2"/>
+                <constraint firstAttribute="bottom" secondItem="l6Z-el-ofr" secondAttribute="bottom" constant="8" id="iKr-zk-Vte"/>
+                <constraint firstItem="oef-NM-jJS" firstAttribute="width" secondItem="3QC-7B-NdI" secondAttribute="width" id="kWW-TG-vcS"/>
+                <constraint firstAttribute="trailing" secondItem="l6Z-el-ofr" secondAttribute="trailing" id="mXd-ZW-C7R"/>
+                <constraint firstItem="t1Q-fz-h3V" firstAttribute="leading" secondItem="1Gj-Z3-2tB" secondAttribute="leading" constant="15" id="ucG-06-LnH"/>
+                <constraint firstAttribute="trailing" secondItem="t1Q-fz-h3V" secondAttribute="trailing" constant="15" id="yqt-KW-OdB"/>
+                <constraint firstItem="f4U-6b-dGN" firstAttribute="leading" secondItem="1Gj-Z3-2tB" secondAttribute="leading" id="z74-PV-Z4v"/>
+            </constraints>
+            <connections>
+                <outlet property="bgImageV" destination="f4U-6b-dGN" id="4jp-zc-DdV"/>
+                <outlet property="swipeView" destination="t1Q-fz-h3V" id="cR3-yC-5eX"/>
+            </connections>
+            <point key="canvasLocation" x="144.5" y="95"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="icon_bg_banner" width="375" height="152"/>
+        <image name="icon_living_bg" width="104" height="42"/>
+        <image name="icon_reserve_live_bg" width="104" height="42"/>
+        <image name="icon_review_bg" width="104" height="42"/>
+    </resources>
+</document>

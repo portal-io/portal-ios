@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NBF-HZ-SVR" customClass="WVRPlayerVRLocalBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="666" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrW-Ma-aUg">
+                    <rect key="frame" x="15" y="15" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="3mI-wF-AZa"/>
+                        <constraint firstAttribute="height" constant="30" id="USm-U5-UJh"/>
+                    </constraints>
+                    <state key="normal" image="player_icon_back"/>
+                    <connections>
+                        <action selector="backOnClick:" destination="NBF-HZ-SVR" eventType="touchUpInside" id="wra-rg-Lai"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dpo-gm-Uo9" customClass="WVRSlider">
+                    <rect key="frame" x="110" y="15" width="421" height="31"/>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4x2-z4-lab" userLabel="vrMode Button">
+                    <rect key="frame" x="601" y="15.5" width="45" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Vov-1L-Pih"/>
+                        <constraint firstAttribute="width" constant="45" id="dnZ-uP-vN3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="icon_player_back_from_vrMode"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="qWo-yq-4HH">
+                    <rect key="frame" x="535" y="22" width="46" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="WXq-sd-wt5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="weB-he-uwl">
+                    <rect key="frame" x="60" y="22" width="46" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="pK5-1U-4CJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4x2-z4-lab" secondAttribute="trailing" constant="20" id="Fif-To-e4e"/>
+                <constraint firstItem="weB-he-uwl" firstAttribute="leading" secondItem="JrW-Ma-aUg" secondAttribute="trailing" constant="15" id="Lt8-S4-UkI"/>
+                <constraint firstItem="weB-he-uwl" firstAttribute="centerY" secondItem="NBF-HZ-SVR" secondAttribute="centerY" id="NMx-pN-kx5"/>
+                <constraint firstItem="qWo-yq-4HH" firstAttribute="leading" secondItem="dpo-gm-Uo9" secondAttribute="trailing" constant="6" id="UQ6-Jl-BSs"/>
+                <constraint firstItem="4x2-z4-lab" firstAttribute="leading" secondItem="qWo-yq-4HH" secondAttribute="trailing" constant="20" id="Xwf-CC-fGl"/>
+                <constraint firstItem="qWo-yq-4HH" firstAttribute="centerY" secondItem="NBF-HZ-SVR" secondAttribute="centerY" id="jnP-hh-oo3"/>
+                <constraint firstItem="dpo-gm-Uo9" firstAttribute="centerY" secondItem="NBF-HZ-SVR" secondAttribute="centerY" id="mGm-0D-gMm"/>
+                <constraint firstItem="4x2-z4-lab" firstAttribute="centerY" secondItem="NBF-HZ-SVR" secondAttribute="centerY" id="qxs-1W-sAG"/>
+                <constraint firstItem="JrW-Ma-aUg" firstAttribute="leading" secondItem="NBF-HZ-SVR" secondAttribute="leading" constant="15" id="ugh-U1-9IZ"/>
+                <constraint firstItem="dpo-gm-Uo9" firstAttribute="leading" secondItem="weB-he-uwl" secondAttribute="trailing" constant="6" id="un6-M2-iId"/>
+                <constraint firstItem="JrW-Ma-aUg" firstAttribute="centerY" secondItem="NBF-HZ-SVR" secondAttribute="centerY" id="xX0-Vh-W7R"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="6JQ-i8-Gut"/>
+            <connections>
+                <outlet property="backBtn" destination="JrW-Ma-aUg" id="LfZ-ne-OwM"/>
+                <outlet property="curTimeL" destination="weB-he-uwl" id="lBc-Up-9sG"/>
+                <outlet property="launchBtn" destination="4x2-z4-lab" id="Rq3-Eh-ZoM"/>
+                <outlet property="processSlider" destination="dpo-gm-Uo9" id="beJ-bM-fdq"/>
+                <outlet property="totalTimeL" destination="qWo-yq-4HH" id="uku-YF-z2F"/>
+                <outlet property="totalTimeLabel" destination="qWo-yq-4HH" id="vHP-NK-DbL"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_player_back_from_vrMode" width="23" height="15"/>
+        <image name="player_icon_back" width="18" height="19"/>
+    </resources>
+</document>

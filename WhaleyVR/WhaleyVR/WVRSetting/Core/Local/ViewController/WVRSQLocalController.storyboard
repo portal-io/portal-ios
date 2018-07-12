@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Local Controller-->
+        <scene sceneID="bHD-KH-4Rz">
+            <objects>
+                <viewController storyboardIdentifier="WVRSQLocalController" id="BSM-8R-47g" customClass="WVRSQLocalController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RML-0m-QVO"/>
+                        <viewControllerLayoutGuide type="bottom" id="s59-AS-Cig"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S8P-li-7i3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ew-rC-ZrF" customClass="SQSegmentView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ayw-4i-A8c"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" alwaysBounceHorizontal="YES" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrr-L8-qTd" customClass="SQPageView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jrr-L8-qTd" secondAttribute="trailing" id="4xy-am-f3l"/>
+                            <constraint firstItem="Jrr-L8-qTd" firstAttribute="top" secondItem="6ew-rC-ZrF" secondAttribute="bottom" id="8wl-bV-NCe"/>
+                            <constraint firstItem="Jrr-L8-qTd" firstAttribute="leading" secondItem="S8P-li-7i3" secondAttribute="leading" id="PGh-QN-lRA"/>
+                            <constraint firstItem="6ew-rC-ZrF" firstAttribute="leading" secondItem="S8P-li-7i3" secondAttribute="leading" id="QFj-1M-bHh"/>
+                            <constraint firstAttribute="trailing" secondItem="6ew-rC-ZrF" secondAttribute="trailing" id="j0Z-Kj-BVU"/>
+                            <constraint firstItem="6ew-rC-ZrF" firstAttribute="top" secondItem="RML-0m-QVO" secondAttribute="bottom" id="oEP-11-rbt"/>
+                            <constraint firstItem="s59-AS-Cig" firstAttribute="top" secondItem="Jrr-L8-qTd" secondAttribute="bottom" id="qGP-YS-CsO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mSegmentV" destination="6ew-rC-ZrF" id="ZhD-Bv-P2h"/>
+                        <outlet property="pageView" destination="Jrr-L8-qTd" id="aUy-K1-EpK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qqr-bQ-Iyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-425" y="-379"/>
+        </scene>
+    </scenes>
+</document>
