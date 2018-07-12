@@ -11891,11 +11891,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(PROJECT_DIR)/WhaleyVR/Classes/ThirdPartyLibrary",
 					"$(PROJECT_DIR)/WhaleyVR",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/WhaleyVR/WVRDanmu/Classes/SocketIO",
-					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/AliPayPlugin",
 					"$(PROJECT_DIR)/WhaleyVR/WVRPlayer/Classes/Player",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -11918,11 +11916,7 @@
 				INFOPLIST_FILE = WhaleyVR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/IpaynowPlugin/iPhone+Simulator",
-					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/WechatPlugin",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -12027,8 +12021,8 @@
 					"-l\"YYModel\"",
 					"-l\"YYText\"",
 					"-l\"c++\"",
-					"-l\"jcore-ios-1.1.7\"",
-					"-l\"jpush-ios-3.0.8\"",
+					"-l\"jcore-ios-1.2.0\"",
+					"-l\"jpush-ios-3.0.9\"",
 					"-l\"resolv\"",
 					"-l\"sqlite3\"",
 					"-l\"xml2\"",
@@ -12104,11 +12098,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(PROJECT_DIR)/WhaleyVR/Classes/ThirdPartyLibrary",
 					"$(PROJECT_DIR)/WhaleyVR",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/WhaleyVR/WVRDanmu/Classes/SocketIO",
-					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/AliPayPlugin",
 					"$(PROJECT_DIR)/WhaleyVR/WVRPlayer/Classes/Player",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -12137,11 +12129,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/WhaleyVR/Classes/WVRPay/Plugin/WechatPlugin",
-					"$(PROJECT_DIR)/WhaleyVR/Classes/WVRPay/Plugin/IpaynowPlugin/iPhone",
 					"$(PROJECT_DIR)/WhaleyVR/Classes/WVRParser/WasuPlayUtil",
-					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/IpaynowPlugin/iPhone+Simulator",
-					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/WechatPlugin",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
