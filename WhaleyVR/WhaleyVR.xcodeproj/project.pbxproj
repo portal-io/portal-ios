@@ -117,6 +117,7 @@
 		32CEEF811FA1E5E100C21DCF /* WVRPlayerBIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CEEF761FA1E5E000C21DCF /* WVRPlayerBIModel.m */; };
 		32CEEF821FA1E5E100C21DCF /* WVRPlayerBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32CEEF7A1FA1E5E000C21DCF /* WVRPlayerBundle.bundle */; };
 		32CEEF831FA1E5E100C21DCF /* WVRPlayerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CEEF7B1FA1E5E000C21DCF /* WVRPlayerHelper.m */; };
+		32CEEF841FA1E5E100C21DCF /* WhaleyVRPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CEEF7C1FA1E5E000C21DCF /* WhaleyVRPlayer.framework */; };
 		32E7CB7B1EED56DA00793B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E7CB7A1EED56DA00793B2C /* Assets.xcassets */; };
 		32F2E7571F6BB505002F27D0 /* WVRHttpLaunchImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F2E7561F6BB505002F27D0 /* WVRHttpLaunchImageInfo.m */; };
 		32F2E75C1F6BB572002F27D0 /* WVRLaunchImageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F2E75B1F6BB572002F27D0 /* WVRLaunchImageViewModel.m */; };
@@ -163,6 +164,7 @@
 		A1183CD51F6F5C9500AF2CD0 /* UnityAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1183CD41F6F5C9500AF2CD0 /* UnityAppController.m */; };
 		A122EAB11DC1A0FB006CCC5A /* WVRHttpAppArrangeListTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A122EAB01DC1A0FB006CCC5A /* WVRHttpAppArrangeListTest.m */; };
 		A130EC5C1E04E4D400E1885C /* WVRHttpGetAddressTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A130EC5B1E04E4D400E1885C /* WVRHttpGetAddressTest.m */; };
+		A13178F0200F8C58001A62A2 /* WVRRNConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A13178EF200F8C58001A62A2 /* WVRRNConfig.m */; };
 		A13376781F7356A4009A2131 /* WVRApiHttpVideoDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = A13376771F7356A4009A2131 /* WVRApiHttpVideoDetail.m */; };
 		A133767C1F735790009A2131 /* WVRApiHttpLiveDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = A133767B1F735790009A2131 /* WVRApiHttpLiveDetail.m */; };
 		A133767F1F73581A009A2131 /* WVRLiveDetailReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A133767E1F73581A009A2131 /* WVRLiveDetailReformer.m */; };
@@ -177,12 +179,16 @@
 		A13D2E2B1FD965630035E692 /* WVRContributionListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D2E2A1FD965630035E692 /* WVRContributionListVC.m */; };
 		A13D2E2E1FDA21C90035E692 /* WVRContributionListPagePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D2E2D1FDA21C90035E692 /* WVRContributionListPagePresenter.m */; };
 		A13D2E351FDA24850035E692 /* WVRMyContributionPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D2E341FDA24850035E692 /* WVRMyContributionPresenter.m */; };
+		A13D2E391FDA2E9E0035E692 /* Target_reactNative.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D2E381FDA2E9E0035E692 /* Target_reactNative.m */; };
 		A13D2E3D1FDA30EA0035E692 /* WVRMediator+WVRReactNative.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D2E3C1FDA30EA0035E692 /* WVRMediator+WVRReactNative.m */; };
+		A13D2E451FDA6E6B0035E692 /* WVRRNUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D2E441FDA6E6B0035E692 /* WVRRNUserModel.m */; };
+		A13D2E481FDA6E820035E692 /* WVRRNUserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D2E471FDA6E820035E692 /* WVRRNUserModule.m */; };
 		A13E8EBE1E1F72CB004EBCD0 /* WVRHttpCollectionSaveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A13E8EBD1E1F72CB004EBCD0 /* WVRHttpCollectionSaveTest.m */; };
 		A13E8EC01E1F73CF004EBCD0 /* WVRHttpCollectionDelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A13E8EBF1E1F73CF004EBCD0 /* WVRHttpCollectionDelTest.m */; };
 		A13E8EC21E1F7452004EBCD0 /* WVRHttpCollectionGetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A13E8EC11E1F7452004EBCD0 /* WVRHttpCollectionGetTest.m */; };
 		A13F2B4D1FD7BC7100D7553D /* WVRTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2B4C1FD7BC7100D7553D /* WVRTestViewController.m */; };
 		A13F2B4F1FD7BC8900D7553D /* WVRTestViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13F2B4E1FD7BC8900D7553D /* WVRTestViewController.storyboard */; };
+		A13F2B531FD7BD2C00D7553D /* WVRRNGoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2B521FD7BD2C00D7553D /* WVRRNGoldViewController.m */; };
 		A13F2B561FD7C7BD00D7553D /* WVRCurrencyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2B551FD7C7BD00D7553D /* WVRCurrencyVC.m */; };
 		A13F2B5A1FD7C86F00D7553D /* WVRCurrencyFaceValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2B591FD7C86F00D7553D /* WVRCurrencyFaceValueCell.m */; };
 		A13F2B5C1FD7C87800D7553D /* WVRCurrencyFaceValueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13F2B5B1FD7C87800D7553D /* WVRCurrencyFaceValueCell.xib */; };
@@ -487,6 +493,8 @@
 		A19974241F724C2700A191B3 /* WVRApiHttpCollectionSave.m in Sources */ = {isa = PBXBuildFile; fileRef = A199740C1F724C2700A191B3 /* WVRApiHttpCollectionSave.m */; };
 		A19974291F724C2700A191B3 /* WVRCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19974161F724C2700A191B3 /* WVRCollectionController.m */; };
 		A199742C1F724C2700A191B3 /* WVRCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A199741D1F724C2700A191B3 /* WVRCollectionViewModel.m */; };
+		A199DDBD1FDA900900FB8DC3 /* WVRRNInitModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A199DDBC1FDA900900FB8DC3 /* WVRRNInitModule.m */; };
+		A199DDC01FDAA42800FB8DC3 /* WVRRNRouterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A199DDBF1FDAA42800FB8DC3 /* WVRRNRouterModule.m */; };
 		A199DDC31FDABB1100FB8DC3 /* WVRRNDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A199DDC21FDABB1100FB8DC3 /* WVRRNDemoViewController.m */; };
 		A1A406F31F6FBA1B00A13BFF /* WVRAboutUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A4068C1F6FBA1B00A13BFF /* WVRAboutUsVC.m */; };
 		A1A406F41F6FBA1B00A13BFF /* WVRAgreementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A4068E1F6FBA1B00A13BFF /* WVRAgreementVC.m */; };
@@ -1047,6 +1055,7 @@
 		A1B2D85F1FD0F3E500EEC5F2 /* NanumPen.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1B2D85E1FD0F3E500EEC5F2 /* NanumPen.ttf */; };
 		A1B2D8621FD0F5C800EEC5F2 /* WVRGiftShakeLable.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B2D8611FD0F5C800EEC5F2 /* WVRGiftShakeLable.m */; };
 		A1B2D8651FD5555300EEC5F2 /* WVRGiftCellAnimalOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B2D8641FD5555300EEC5F2 /* WVRGiftCellAnimalOperation.m */; };
+		A1BE72871FDF70CE004E695D /* WVRRNLiveCompleteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BE72861FDF70CE004E695D /* WVRRNLiveCompleteVC.m */; };
 		A1BE728A1FDFB4A6004E695D /* WVRLiveCompleteViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BE72891FDFB4A6004E695D /* WVRLiveCompleteViewPresenter.m */; };
 		A1C4638A1F935981002D99CB /* WVRPlayViewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C463891F935981002D99CB /* WVRPlayViewViewModel.m */; };
 		A1C4638C1F944557002D99CB /* WVRPlayerFullSBottomViewLocal.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C4638B1F944557002D99CB /* WVRPlayerFullSBottomViewLocal.xib */; };
@@ -1102,6 +1111,7 @@
 		A1D899BC1F7135DC0011E308 /* WVRHistoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D899B21F7135DC0011E308 /* WVRHistoryViewModel.m */; };
 		A1D8AD3C20074E0200E135F8 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = A1D8AD3A20074E0200E135F8 /* main.jsbundle */; };
 		A1D8AD3D20074E0200E135F8 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = A1D8AD3B20074E0200E135F8 /* assets */; };
+		A1D8AD40200D906300E135F8 /* WVRRNContextModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D8AD3F200D906300E135F8 /* WVRRNContextModule.m */; };
 		A1DA3F371DC1B180006050B7 /* WVRHttpStatisticTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DA3F361DC1B180006050B7 /* WVRHttpStatisticTest.m */; };
 		A1DA3F421DC1D5C7006050B7 /* WVRHttpProgramDetailTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DA3F411DC1D5C7006050B7 /* WVRHttpProgramDetailTest.m */; };
 		A1DE2F8E1FDE6A5400204CD2 /* WVROrderSWCurrencyHView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DE2F8D1FDE6A5400204CD2 /* WVROrderSWCurrencyHView.m */; };
@@ -1158,6 +1168,8 @@
 		A1EE2CF21DB9C15B002B909A /* HttpForgotPWTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EE2CF11DB9C15B002B909A /* HttpForgotPWTest.m */; };
 		A1EE2CF91DB9C55C002B909A /* HttpForgotPWSMSCodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EE2CF81DB9C55C002B909A /* HttpForgotPWSMSCodeTest.m */; };
 		A1EE2D0A1DB9FABC002B909A /* HttpForgotPWValidateCodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EE2D091DB9FABC002B909A /* HttpForgotPWValidateCodeTest.m */; };
+		A1EE38991FEA614D00C8AFFA /* WVRRNToastModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EE38981FEA614D00C8AFFA /* WVRRNToastModule.m */; };
+		A1EE38A21FEA6E6100C8AFFA /* RCTStatusBarManager+CustomStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EE38A11FEA6E6100C8AFFA /* RCTStatusBarManager+CustomStyle.m */; };
 		A1F196D51F8C6B440083CEAE /* WVRHttpValidatePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F196D41F8C6B440083CEAE /* WVRHttpValidatePhone.m */; };
 		A1F196D81F8C6C870083CEAE /* WVRValidatePhoneUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F196D71F8C6C870083CEAE /* WVRValidatePhoneUseCase.m */; };
 		A1F196DB1F8C6DFF0083CEAE /* WVRHttpUpdatePhoneSMS.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F196DA1F8C6DFF0083CEAE /* WVRHttpUpdatePhoneSMS.m */; };
@@ -1166,6 +1178,7 @@
 		A1FC78771F91F33300B23580 /* WVRPlayRightCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FC78761F91F33300B23580 /* WVRPlayRightCellViewModel.m */; };
 		A1FFCBFA1FCA90950059D678 /* WVRToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FFCBF91FCA90950059D678 /* WVRToastView.m */; };
 		A1FFCBFC1FCA90A00059D678 /* WVRToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1FFCBFB1FCA909F0059D678 /* WVRToastView.xib */; };
+		B2D1FF131FDEA63400A2EDD0 /* WVRRNBackModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D1FF121FDEA63400A2EDD0 /* WVRRNBackModule.m */; };
 		C21352792B61EC954DFE1BFA /* libPods-WhaleyVRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B3F7DA64A32C1703CFC5AF /* libPods-WhaleyVRTests.a */; };
 		F8530F011D45F0D10019A9E3 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8530F001D45F0D10019A9E3 /* libc++.1.tbd */; };
 		F8530F031D45F0DA0019A9E3 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8530F021D45F0DA0019A9E3 /* libstdc++.6.0.9.tbd */; };
@@ -1423,6 +1436,7 @@
 		32CEEF781FA1E5E000C21DCF /* WVRPlayerBackgroundModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPlayerBackgroundModel.h; sourceTree = "<group>"; };
 		32CEEF7A1FA1E5E000C21DCF /* WVRPlayerBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WVRPlayerBundle.bundle; sourceTree = "<group>"; };
 		32CEEF7B1FA1E5E000C21DCF /* WVRPlayerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPlayerHelper.m; sourceTree = "<group>"; };
+		32CEEF7C1FA1E5E000C21DCF /* WhaleyVRPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WhaleyVRPlayer.framework; sourceTree = "<group>"; };
 		32CEEF7D1FA1E5E000C21DCF /* WVRPlayerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPlayerHelper.h; sourceTree = "<group>"; };
 		32E7CB7A1EED56DA00793B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Classes/Assets.xcassets; sourceTree = "<group>"; };
 		32F2E7551F6BB505002F27D0 /* WVRHttpLaunchImageInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRHttpLaunchImageInfo.h; sourceTree = "<group>"; };
@@ -1489,6 +1503,8 @@
 		A122EAB01DC1A0FB006CCC5A /* WVRHttpAppArrangeListTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpAppArrangeListTest.m; sourceTree = "<group>"; };
 		A12B82C01FB2B62500B0FEDA /* WVRPlayViewCellViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRPlayViewCellViewModelProtocol.h; sourceTree = "<group>"; };
 		A130EC5B1E04E4D400E1885C /* WVRHttpGetAddressTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpGetAddressTest.m; sourceTree = "<group>"; };
+		A13178EE200F8C58001A62A2 /* WVRRNConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRRNConfig.h; sourceTree = "<group>"; };
+		A13178EF200F8C58001A62A2 /* WVRRNConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRRNConfig.m; sourceTree = "<group>"; };
 		A13376761F7356A4009A2131 /* WVRApiHttpVideoDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRApiHttpVideoDetail.h; sourceTree = "<group>"; };
 		A13376771F7356A4009A2131 /* WVRApiHttpVideoDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRApiHttpVideoDetail.m; sourceTree = "<group>"; };
 		A133767A1F735790009A2131 /* WVRApiHttpLiveDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRApiHttpLiveDetail.h; sourceTree = "<group>"; };
@@ -1513,14 +1529,22 @@
 		A13D2E2F1FDA21E20035E692 /* WVRContributionListVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRContributionListVCProtocol.h; sourceTree = "<group>"; };
 		A13D2E331FDA24850035E692 /* WVRMyContributionPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRMyContributionPresenter.h; sourceTree = "<group>"; };
 		A13D2E341FDA24850035E692 /* WVRMyContributionPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRMyContributionPresenter.m; sourceTree = "<group>"; };
+		A13D2E371FDA2E9E0035E692 /* Target_reactNative.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_reactNative.h; sourceTree = "<group>"; };
+		A13D2E381FDA2E9E0035E692 /* Target_reactNative.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_reactNative.m; sourceTree = "<group>"; };
 		A13D2E3B1FDA30EA0035E692 /* WVRMediator+WVRReactNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WVRMediator+WVRReactNative.h"; sourceTree = "<group>"; };
 		A13D2E3C1FDA30EA0035E692 /* WVRMediator+WVRReactNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WVRMediator+WVRReactNative.m"; sourceTree = "<group>"; };
+		A13D2E431FDA6E6B0035E692 /* WVRRNUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRRNUserModel.h; sourceTree = "<group>"; };
+		A13D2E441FDA6E6B0035E692 /* WVRRNUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRRNUserModel.m; sourceTree = "<group>"; };
+		A13D2E461FDA6E820035E692 /* WVRRNUserModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRRNUserModule.h; sourceTree = "<group>"; };
+		A13D2E471FDA6E820035E692 /* WVRRNUserModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRRNUserModule.m; sourceTree = "<group>"; };
 		A13E8EBD1E1F72CB004EBCD0 /* WVRHttpCollectionSaveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpCollectionSaveTest.m; sourceTree = "<group>"; };
 		A13E8EBF1E1F73CF004EBCD0 /* WVRHttpCollectionDelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpCollectionDelTest.m; sourceTree = "<group>"; };
 		A13E8EC11E1F7452004EBCD0 /* WVRHttpCollectionGetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpCollectionGetTest.m; sourceTree = "<group>"; };
 		A13F2B4B1FD7BC7100D7553D /* WVRTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRTestViewController.h; sourceTree = "<group>"; };
 		A13F2B4C1FD7BC7100D7553D /* WVRTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRTestViewController.m; sourceTree = "<group>"; };
 		A13F2B4E1FD7BC8900D7553D /* WVRTestViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WVRTestViewController.storyboard; sourceTree = "<group>"; };
+		A13F2B511FD7BD2C00D7553D /* WVRRNGoldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRRNGoldViewController.h; sourceTree = "<group>"; };
+		A13F2B521FD7BD2C00D7553D /* WVRRNGoldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRRNGoldViewController.m; sourceTree = "<group>"; };
 		A13F2B541FD7C7BD00D7553D /* WVRCurrencyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRCurrencyVC.h; sourceTree = "<group>"; };
 		A13F2B551FD7C7BD00D7553D /* WVRCurrencyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRCurrencyVC.m; sourceTree = "<group>"; };
 		A13F2B581FD7C86F00D7553D /* WVRCurrencyFaceValueCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRCurrencyFaceValueCell.h; sourceTree = "<group>"; };
@@ -2135,6 +2159,10 @@
 		A19974161F724C2700A191B3 /* WVRCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRCollectionController.m; sourceTree = "<group>"; };
 		A199741C1F724C2700A191B3 /* WVRCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRCollectionViewModel.h; sourceTree = "<group>"; };
 		A199741D1F724C2700A191B3 /* WVRCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRCollectionViewModel.m; sourceTree = "<group>"; };
+		A199DDBB1FDA900900FB8DC3 /* WVRRNInitModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRRNInitModule.h; sourceTree = "<group>"; };
+		A199DDBC1FDA900900FB8DC3 /* WVRRNInitModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRRNInitModule.m; sourceTree = "<group>"; };
+		A199DDBE1FDAA42800FB8DC3 /* WVRRNRouterModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRRNRouterModule.h; sourceTree = "<group>"; };
+		A199DDBF1FDAA42800FB8DC3 /* WVRRNRouterModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRRNRouterModule.m; sourceTree = "<group>"; };
 		A199DDC11FDABB1100FB8DC3 /* WVRRNDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRRNDemoViewController.h; sourceTree = "<group>"; };
 		A199DDC21FDABB1100FB8DC3 /* WVRRNDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRRNDemoViewController.m; sourceTree = "<group>"; };
 		A1A4068B1F6FBA1B00A13BFF /* WVRAboutUsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRAboutUsVC.h; sourceTree = "<group>"; };
@@ -3228,6 +3256,8 @@
 		A1B2D8611FD0F5C800EEC5F2 /* WVRGiftShakeLable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRGiftShakeLable.m; sourceTree = "<group>"; };
 		A1B2D8631FD5555300EEC5F2 /* WVRGiftCellAnimalOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRGiftCellAnimalOperation.h; sourceTree = "<group>"; };
 		A1B2D8641FD5555300EEC5F2 /* WVRGiftCellAnimalOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRGiftCellAnimalOperation.m; sourceTree = "<group>"; };
+		A1BE72851FDF70CE004E695D /* WVRRNLiveCompleteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRRNLiveCompleteVC.h; sourceTree = "<group>"; };
+		A1BE72861FDF70CE004E695D /* WVRRNLiveCompleteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRRNLiveCompleteVC.m; sourceTree = "<group>"; };
 		A1BE72881FDFB4A6004E695D /* WVRLiveCompleteViewPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRLiveCompleteViewPresenter.h; sourceTree = "<group>"; };
 		A1BE72891FDFB4A6004E695D /* WVRLiveCompleteViewPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRLiveCompleteViewPresenter.m; sourceTree = "<group>"; };
 		A1C463881F935981002D99CB /* WVRPlayViewViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRPlayViewViewModel.h; sourceTree = "<group>"; };
@@ -3314,6 +3344,8 @@
 		A1D899B21F7135DC0011E308 /* WVRHistoryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHistoryViewModel.m; sourceTree = "<group>"; };
 		A1D8AD3A20074E0200E135F8 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = SOURCE_ROOT; };
 		A1D8AD3B20074E0200E135F8 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		A1D8AD3E200D906300E135F8 /* WVRRNContextModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRRNContextModule.h; sourceTree = "<group>"; };
+		A1D8AD3F200D906300E135F8 /* WVRRNContextModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRRNContextModule.m; sourceTree = "<group>"; };
 		A1DA3F361DC1B180006050B7 /* WVRHttpStatisticTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpStatisticTest.m; sourceTree = "<group>"; };
 		A1DA3F411DC1D5C7006050B7 /* WVRHttpProgramDetailTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpProgramDetailTest.m; sourceTree = "<group>"; };
 		A1DE2F8C1FDE6A5400204CD2 /* WVROrderSWCurrencyHView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVROrderSWCurrencyHView.h; sourceTree = "<group>"; };
@@ -3428,6 +3460,10 @@
 		A1EE2CF11DB9C15B002B909A /* HttpForgotPWTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpForgotPWTest.m; sourceTree = "<group>"; };
 		A1EE2CF81DB9C55C002B909A /* HttpForgotPWSMSCodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpForgotPWSMSCodeTest.m; sourceTree = "<group>"; };
 		A1EE2D091DB9FABC002B909A /* HttpForgotPWValidateCodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpForgotPWValidateCodeTest.m; sourceTree = "<group>"; };
+		A1EE38971FEA614D00C8AFFA /* WVRRNToastModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRRNToastModule.h; sourceTree = "<group>"; };
+		A1EE38981FEA614D00C8AFFA /* WVRRNToastModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRRNToastModule.m; sourceTree = "<group>"; };
+		A1EE38A01FEA6E6100C8AFFA /* RCTStatusBarManager+CustomStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTStatusBarManager+CustomStyle.h"; sourceTree = "<group>"; };
+		A1EE38A11FEA6E6100C8AFFA /* RCTStatusBarManager+CustomStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTStatusBarManager+CustomStyle.m"; sourceTree = "<group>"; };
 		A1F196D21F8B78370083CEAE /* WVRProgramPackageCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRProgramPackageCProtocol.h; sourceTree = "<group>"; };
 		A1F196D31F8C6B440083CEAE /* WVRHttpValidatePhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRHttpValidatePhone.h; sourceTree = "<group>"; };
 		A1F196D41F8C6B440083CEAE /* WVRHttpValidatePhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRHttpValidatePhone.m; sourceTree = "<group>"; };
@@ -3445,6 +3481,8 @@
 		A1FFCBF81FCA90950059D678 /* WVRToastView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRToastView.h; sourceTree = "<group>"; };
 		A1FFCBF91FCA90950059D678 /* WVRToastView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRToastView.m; sourceTree = "<group>"; };
 		A1FFCBFB1FCA909F0059D678 /* WVRToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WVRToastView.xib; sourceTree = "<group>"; };
+		B2D1FF111FDEA63400A2EDD0 /* WVRRNBackModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WVRRNBackModule.h; sourceTree = "<group>"; };
+		B2D1FF121FDEA63400A2EDD0 /* WVRRNBackModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRRNBackModule.m; sourceTree = "<group>"; };
 		CDDFC2BA48C0EF7C322CC6F1 /* libPods-WhaleyVR-WhaleyVRTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhaleyVR-WhaleyVRTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8530F001D45F0D10019A9E3 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		F8530F021D45F0DA0019A9E3 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
@@ -3524,6 +3562,7 @@
 				6938C3EF1D407A3700424DDC /* SystemConfiguration.framework in Frameworks */,
 				6938C3ED1D407A2E00424DDC /* WebKit.framework in Frameworks */,
 				892D4D123B161F4D993FEE7D /* libPods-WhaleyVR.a in Frameworks */,
+				32CEEF841FA1E5E100C21DCF /* WhaleyVRPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3869,6 +3908,7 @@
 			isa = PBXGroup;
 			children = (
 				32CEEF7A1FA1E5E000C21DCF /* WVRPlayerBundle.bundle */,
+				32CEEF7C1FA1E5E000C21DCF /* WhaleyVRPlayer.framework */,
 				32CEEF7D1FA1E5E000C21DCF /* WVRPlayerHelper.h */,
 				32CEEF7B1FA1E5E000C21DCF /* WVRPlayerHelper.m */,
 				3282FF0D1FA59CE2006DA36E /* WVRPlayerHelper+BI.h */,
@@ -3956,6 +3996,7 @@
 		6938C0671D4061F200424DDC /* WhaleyVR */ = {
 			isa = PBXGroup;
 			children = (
+				A13F2B501FD7BD1700D7553D /* WVRReactNative */,
 				A13F2B4A1FD7BC5500D7553D /* WVRTest */,
 				A1B2D7431FCE588600EEC5F2 /* WVRUtil */,
 				A1B2D72B1FCE4CB600EEC5F2 /* WVRGift */,
@@ -4156,6 +4197,15 @@
 			path = myContribution;
 			sourceTree = "<group>";
 		};
+		A13D2E361FDA2E810035E692 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				A13D2E371FDA2E9E0035E692 /* Target_reactNative.h */,
+				A13D2E381FDA2E9E0035E692 /* Target_reactNative.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 		A13D2E3A1FDA30EA0035E692 /* WVRReactNative */ = {
 			isa = PBXGroup;
 			children = (
@@ -4163,6 +4213,36 @@
 				A13D2E3C1FDA30EA0035E692 /* WVRMediator+WVRReactNative.m */,
 			);
 			path = WVRReactNative;
+			sourceTree = "<group>";
+		};
+		A13D2E411FDA6E4D0035E692 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A13D2E431FDA6E6B0035E692 /* WVRRNUserModel.h */,
+				A13D2E441FDA6E6B0035E692 /* WVRRNUserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A13D2E421FDA6E4D0035E692 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A13D2E461FDA6E820035E692 /* WVRRNUserModule.h */,
+				A13D2E471FDA6E820035E692 /* WVRRNUserModule.m */,
+				A199DDBB1FDA900900FB8DC3 /* WVRRNInitModule.h */,
+				A199DDBC1FDA900900FB8DC3 /* WVRRNInitModule.m */,
+				A199DDBE1FDAA42800FB8DC3 /* WVRRNRouterModule.h */,
+				A199DDBF1FDAA42800FB8DC3 /* WVRRNRouterModule.m */,
+				B2D1FF111FDEA63400A2EDD0 /* WVRRNBackModule.h */,
+				B2D1FF121FDEA63400A2EDD0 /* WVRRNBackModule.m */,
+				A1EE38971FEA614D00C8AFFA /* WVRRNToastModule.h */,
+				A1EE38981FEA614D00C8AFFA /* WVRRNToastModule.m */,
+				A1EE38A01FEA6E6100C8AFFA /* RCTStatusBarManager+CustomStyle.h */,
+				A1EE38A11FEA6E6100C8AFFA /* RCTStatusBarManager+CustomStyle.m */,
+				A1D8AD3E200D906300E135F8 /* WVRRNContextModule.h */,
+				A1D8AD3F200D906300E135F8 /* WVRRNContextModule.m */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		A13F2B4A1FD7BC5500D7553D /* WVRTest */ = {
@@ -4175,6 +4255,22 @@
 				A199DDC21FDABB1100FB8DC3 /* WVRRNDemoViewController.m */,
 			);
 			path = WVRTest;
+			sourceTree = "<group>";
+		};
+		A13F2B501FD7BD1700D7553D /* WVRReactNative */ = {
+			isa = PBXGroup;
+			children = (
+				A13D2E411FDA6E4D0035E692 /* Model */,
+				A13D2E421FDA6E4D0035E692 /* Modules */,
+				A13D2E361FDA2E810035E692 /* Public */,
+				A13F2B511FD7BD2C00D7553D /* WVRRNGoldViewController.h */,
+				A13F2B521FD7BD2C00D7553D /* WVRRNGoldViewController.m */,
+				A1BE72851FDF70CE004E695D /* WVRRNLiveCompleteVC.h */,
+				A1BE72861FDF70CE004E695D /* WVRRNLiveCompleteVC.m */,
+				A13178EE200F8C58001A62A2 /* WVRRNConfig.h */,
+				A13178EF200F8C58001A62A2 /* WVRRNConfig.m */,
+			);
+			path = WVRReactNative;
 			sourceTree = "<group>";
 		};
 		A13F2B571FD7C7FB00D7553D /* View */ = {
@@ -10733,6 +10829,7 @@
 				A196A8191F9F6600002C0CF2 /* SQTableView.m in Sources */,
 				A15B7F1E1F7294E8008FCDE8 /* WVRHttpProgramPackageReformer.m in Sources */,
 				A140D1F71F73E7AA00C35596 /* WVRWhaleyHTTPManager.m in Sources */,
+				A199DDC01FDAA42800FB8DC3 /* WVRRNRouterModule.m in Sources */,
 				A15B7F121F7294E8008FCDE8 /* WVRApiHttpArrangeTree.m in Sources */,
 				A15B7F221F7294E8008FCDE8 /* WVRRecommendPageReformer.m in Sources */,
 				A1A409241F6FC25200A13BFF /* WVRWebSocketConfig.m in Sources */,
@@ -10760,8 +10857,10 @@
 				A196A8161F9F6600002C0CF2 /* SQSegmentView.m in Sources */,
 				A196A81D1F9F6600002C0CF2 /* SQToastTool.m in Sources */,
 				A16554BA1F7269400032189F /* WVRCollectionSaveUseCase.m in Sources */,
+				A13F2B531FD7BD2C00D7553D /* WVRRNGoldViewController.m in Sources */,
 				A1A414BC1F6FC8E500A13BFF /* WVRMyFollowCell.m in Sources */,
 				A1A408791F6FBA4300A13BFF /* WVRApiHttpFinishNamePassword.m in Sources */,
+				A13D2E391FDA2E9E0035E692 /* Target_reactNative.m in Sources */,
 				A1B2D7C21FCE98AB00EEC5F2 /* WVRHttpProgramMember.m in Sources */,
 				A1A413A01F6FC8E300A13BFF /* WVRAutoArrangeView.m in Sources */,
 				A158FDD91F713DDF00C1EB76 /* WVRApiHttpHistoryDelAll.m in Sources */,
@@ -10773,6 +10872,7 @@
 				A158FDFF1F71516B00C1EB76 /* WVRHttpMyReserveModel.m in Sources */,
 				A1A4150E1F6FC8E600A13BFF /* WVRLiveDetailVC.m in Sources */,
 				A1628E691F3DA3D7006B015F /* WVRLaunchLoginController.m in Sources */,
+				B2D1FF131FDEA63400A2EDD0 /* WVRRNBackModule.m in Sources */,
 				A196A8061F9F6600002C0CF2 /* SQHorCollectionViewLayout.m in Sources */,
 				A1A4165C1F70B10D00A13BFF /* WVRApiHttpAllChannel.m in Sources */,
 				A17E1D651F7203D3005F6703 /* WVRFootballViewModel.m in Sources */,
@@ -10866,6 +10966,7 @@
 				A1A408891F6FBA4300A13BFF /* WVRApiHttpRegister.m in Sources */,
 				A196A5E51F9F549B002C0CF2 /* WVRNetConst.m in Sources */,
 				A15B7F361F729A63008FCDE8 /* WVRLiveListUseCase.m in Sources */,
+				A1D8AD40200D906300E135F8 /* WVRRNContextModule.m in Sources */,
 				A199741F1F724C2700A191B3 /* WVRCollectionDelUseCase.m in Sources */,
 				A1A416171F6FCAAB00A13BFF /* WVRTicketDetailListVC.m in Sources */,
 				A1DFFF121F73A210003AF74B /* WVRRewardSectionHeader.m in Sources */,
@@ -11065,6 +11166,7 @@
 				A196A5BC1F9F5259002C0CF2 /* WVRTableViewHeadViewModel.m in Sources */,
 				A1A414841F6FC8E500A13BFF /* WVRVideoEntityMoreTV.m in Sources */,
 				A196A7FD1F9F6600002C0CF2 /* WVRCollectionViewCell.m in Sources */,
+				A1EE38A21FEA6E6100C8AFFA /* RCTStatusBarManager+CustomStyle.m in Sources */,
 				32CEEF831FA1E5E100C21DCF /* WVRPlayerHelper.m in Sources */,
 				A196A5BE1F9F5259002C0CF2 /* WVRViewModel.m in Sources */,
 				A17E1D931F720FD3005F6703 /* WVRLiveNoticePresenter.m in Sources */,
@@ -11075,9 +11177,11 @@
 				A1A413A11F6FC8E300A13BFF /* WVRFindNavBarView.m in Sources */,
 				A1A413991F6FC8E300A13BFF /* WVRKVOHandler.m in Sources */,
 				A1A414E91F6FC8E500A13BFF /* WVRSortItemView.m in Sources */,
+				A13D2E481FDA6E820035E692 /* WVRRNUserModule.m in Sources */,
 				A1A414EA1F6FC8E500A13BFF /* WVRSearchViewController.m in Sources */,
 				32CEEF801FA1E5E100C21DCF /* WVRPlayerBackgroundModel.m in Sources */,
 				A1A4148C1F6FC8E500A13BFF /* WVRHistoryModelReformer.m in Sources */,
+				A13178F0200F8C58001A62A2 /* WVRRNConfig.m in Sources */,
 				A1A408681F6FBA4300A13BFF /* WVRApiHttpChangePhone.m in Sources */,
 				A1B2D7E11FCFD67200EEC5F2 /* WVRGiftAnimalViewCellViewModel.m in Sources */,
 				A1A414B71F6FC8E500A13BFF /* WVRPublisherListModel.m in Sources */,
@@ -11381,6 +11485,7 @@
 				A1A4089B1F6FBA4400A13BFF /* WVRPassWordInputView.m in Sources */,
 				A1E0800E1F78946600BB5B77 /* WVRTopBarViewModel.m in Sources */,
 				A1A4084E1F6FBA4300A13BFF /* WVRThirtyPAuthUseCase.m in Sources */,
+				A199DDBD1FDA900900FB8DC3 /* WVRRNInitModule.m in Sources */,
 				A1DFFF1E1F73A285003AF74B /* WVRApiHttpReward.m in Sources */,
 				A1A414871F6FC8E500A13BFF /* WVRAddressModel.m in Sources */,
 				A1A413C61F6FC8E400A13BFF /* WVRBusLiveModel.m in Sources */,
@@ -11414,8 +11519,10 @@
 				A1E2B1C61F91D95900CE214B /* WVRBlurImageView.m in Sources */,
 				A1C4638F1F94514A002D99CB /* WVRPlayerBannerLiveController.m in Sources */,
 				A1A416371F6FCAAB00A13BFF /* WVRUnityTempTopicView.m in Sources */,
+				A1EE38991FEA614D00C8AFFA /* WVRRNToastModule.m in Sources */,
 				323464901F9EDA5E00660429 /* WVRPlayerViewDetail.m in Sources */,
 				A13D2E251FD962700035E692 /* WVRPlayerFullLiveTopView.m in Sources */,
+				A1BE72871FDF70CE004E695D /* WVRRNLiveCompleteVC.m in Sources */,
 				A1A4135D1F6FC8E300A13BFF /* WVRLabelCell.m in Sources */,
 				A1A4087E1F6FBA4300A13BFF /* WVRSQPWInputCell.m in Sources */,
 				A1A408571F6FBA4300A13BFF /* WVRLoginViewController.m in Sources */,
@@ -11582,6 +11689,7 @@
 				A1EA422B1F7DD90B00BADF9C /* WVRProgramPackageUseCase.m in Sources */,
 				A1A4084B1F6FBA4300A13BFF /* WVRAccountUseCase.m in Sources */,
 				A1A409231F6FC25200A13BFF /* WVRWebSocketClient.m in Sources */,
+				A13D2E451FDA6E6B0035E692 /* WVRRNUserModel.m in Sources */,
 				32F2E75F1F6BB605002F27D0 /* WVRLaunchImageInfoUseCase.m in Sources */,
 				A1A414C11F6FC8E500A13BFF /* WVRNoneFollowView.m in Sources */,
 				A1628E6A1F3DA3D7006B015F /* WVRLaunchLoginView.m in Sources */,
@@ -11887,9 +11995,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/WhaleyVR/Classes/ThirdPartyLibrary",
 					"$(PROJECT_DIR)/WhaleyVR",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/WhaleyVR/WVRDanmu/Classes/SocketIO",
+					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/AliPayPlugin",
 					"$(PROJECT_DIR)/WhaleyVR/WVRPlayer/Classes/Player",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -11912,7 +12022,11 @@
 				INFOPLIST_FILE = WhaleyVR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/IpaynowPlugin/iPhone+Simulator",
+					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/WechatPlugin",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -12017,8 +12131,8 @@
 					"-l\"YYModel\"",
 					"-l\"YYText\"",
 					"-l\"c++\"",
-					"-l\"jcore-ios-1.2.0\"",
-					"-l\"jpush-ios-3.0.9\"",
+					"-l\"jcore-ios-1.1.7\"",
+					"-l\"jpush-ios-3.0.8\"",
 					"-l\"resolv\"",
 					"-l\"sqlite3\"",
 					"-l\"xml2\"",
@@ -12094,9 +12208,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/WhaleyVR/Classes/ThirdPartyLibrary",
 					"$(PROJECT_DIR)/WhaleyVR",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/WhaleyVR/WVRDanmu/Classes/SocketIO",
+					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/AliPayPlugin",
 					"$(PROJECT_DIR)/WhaleyVR/WVRPlayer/Classes/Player",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -12125,7 +12241,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/WhaleyVR/Classes/WVRPay/Plugin/WechatPlugin",
+					"$(PROJECT_DIR)/WhaleyVR/Classes/WVRPay/Plugin/IpaynowPlugin/iPhone",
 					"$(PROJECT_DIR)/WhaleyVR/Classes/WVRParser/WasuPlayUtil",
+					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/IpaynowPlugin/iPhone+Simulator",
+					"$(PROJECT_DIR)/WhaleyVR/WVRPay/Classes/Plugin/WechatPlugin",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (

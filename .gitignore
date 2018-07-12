@@ -1,0 +1,11 @@
+.DS_Store
+WhaleyVR/Pods
+WhaleyVR/WhaleyVR.xcworkspace/
+WhaleyVR/Fix_js/
+WhaleyVR/doc/
+WhaleyVR/main.js
+WhaleyVR/main.jsbundle
+WhaleyVR/main.jsbundle.meta
+WhaleyVR/v2.3.0VRChangemain.js
+WhaleyVR/WhaleyVR/WVRPlayer/Classes/Player/WhaleyVRPlayer.framework
+
